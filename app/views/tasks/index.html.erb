@@ -1,8 +1,8 @@
 <% @tasks.each do |task| %>
   <div>
-     <h3><%= task.title %></h3>
-<!--      <p><%= task.details %></p> -->
-     <p>Completed: <%= task.completed %></p>
+    <h4>Completed: <%= task.completed %> |
+      <%= link_to task.title, task_path(task) %>
+    </h3>
    </div>
 <% end %>
 
